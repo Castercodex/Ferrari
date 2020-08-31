@@ -1,0 +1,298 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: black;
+}
+
+#header {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 10px;
+  width: 100%;
+  z-index: 1;
+}
+
+#header img {
+  height: 3rem;
+  margin-left: 20px;
+}
+
+#header .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin-top: 10px;
+}
+
+#header .nav-links #nav-link {
+  text-decoration: none;
+  color: black;
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+#intro {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(20%, rgba(0, 0, 0, 0)), color-stop(40%, rgba(0, 0, 0, 0.568)), color-stop(80%, rgba(0, 0, 0, 0.966)), to(black)), url(./img/a.jpg);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.568) 40%, rgba(0, 0, 0, 0.966) 80%, black 100%), url(./img/a.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  text-align: center;
+  z-index: 1;
+}
+
+#intro #text {
+  text-align: center;
+}
+
+#intro #text h1 {
+  font-size: 50px;
+  font-family: "Agency FB", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-top: 3rem;
+  color: black;
+  font-weight: bolder;
+}
+
+#intro #text #para {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 8rem;
+}
+
+#intro #text #para p {
+  font-family: "Bodoni MT";
+  color: white;
+  font-size: 15px;
+  width: 50%;
+  z-index: 1;
+}
+
+#intro #box {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 1;
+}
+
+#intro #box h2 {
+  font-family: "Digital-7 Mono";
+  font-size: 40px;
+}
+
+#intro #box span {
+  font-weight: lighter;
+  font-size: 13px;
+}
+
+#intro #box p {
+  font-size: 10px;
+}
+
+#intro #box #line {
+  background-color: white;
+  color: white;
+  width: 1px;
+  height: 50px;
+  z-index: 1;
+}
+
+#intro #btn {
+  z-index: 1;
+}
+
+#intro #btn button {
+  width: 17rem;
+  height: 3rem;
+  background-color: transparent;
+  color: white;
+  border-radius: 20px;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+  cursor: pointer;
+}
+
+#intro #btn button:hover {
+  background-color: #cc1919;
+  border: 1px solid white;
+  -webkit-box-shadow: 0px 1px 10px 0px #d81515, 0px 1px 10px 0px #d81515;
+          box-shadow: 0px 1px 10px 0px #d81515, 0px 1px 10px 0px #d81515;
+}
+
+#specs {
+  background: -webkit-gradient(linear, left top, left bottom, from(black), color-stop(20%, rgba(0, 0, 0, 0.993)), color-stop(40%, rgba(0, 0, 0, 0.61)), color-stop(80%, rgba(0, 0, 0, 0.096)), to(rgba(0, 0, 0, 0.144))), black;
+  background: linear-gradient(to bottom, black 0%, rgba(0, 0, 0, 0.993) 20%, rgba(0, 0, 0, 0.61) 40%, rgba(0, 0, 0, 0.096) 80%, rgba(0, 0, 0, 0.144) 100%), black;
+  background-size: cover;
+  color: #e7e7e7;
+  height: 130vh;
+  text-align: center;
+}
+
+#specs h1 {
+  font-family: serif;
+  font-size: 40px;
+  margin-top: 3rem;
+}
+
+#specs #img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#specs #img img {
+  margin-top: 4rem;
+  width: 80%;
+  height: 80%;
+  opacity: 0.5;
+}
+
+#specs #specs-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#specs #specs-box #circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background-color: transparent;
+  border: 7px solid #580101;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 100%;
+  margin-top: 3rem;
+}
+
+#specs #specs-box #circle h2 {
+  font-family: "Digital-7 Mono", sans-serif;
+  font-size: 30px;
+}
+
+#specs #specs-box #circle h2 span {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+}
+
+#specs #specs-box #circle p {
+  font-size: 10px;
+}
+
+#asset {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(black), color-stop(20%, rgba(0, 0, 0, 0.993)), color-stop(40%, rgba(0, 0, 0, 0.61)), color-stop(80%, rgba(0, 0, 0, 0.096)), to(black)), url(./img/c.jpg);
+  background-image: linear-gradient(to bottom, black 0%, rgba(0, 0, 0, 0.993) 20%, rgba(0, 0, 0, 0.61) 40%, rgba(0, 0, 0, 0.096) 80%, black 100%), url(./img/c.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+#asset #asset-box {
+  position: relative;
+  color: white;
+  z-index: 2;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  padding-left: 40px;
+  top: 80vh;
+}
+
+#asset h1 {
+  padding-left: 3rem;
+}
+
+#asset h1 u {
+  -webkit-text-decoration-color: red;
+          text-decoration-color: red;
+}
+
+#interior {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.925)), color-stop(10%, rgba(0, 0, 0, 0.678)), color-stop(20%, black), color-stop(40%, rgba(0, 0, 0, 0)), color-stop(80%, rgba(0, 0, 0, 0)), to(black)), url(./img/d.jpg);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.925) 0%, rgba(0, 0, 0, 0.678) 10%, black 20%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 80%, black 100%), url(./img/d.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+#interior .text {
+  position: relative;
+  top: 30rem;
+  color: white;
+  margin-left: 3rem;
+}
+
+#interior .text h1 {
+  font-family: "Agency FB";
+  font-size: 30px;
+}
+
+footer {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, rgba(0, 0, 0, 0)), color-stop(80%, rgba(0, 0, 0, 0)), to(black)), black;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 80%, black 100%), black;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 10vh;
+}
+
+footer span {
+  color: #f70f0f;
+}
+
+footer p {
+  margin-top: 3rem;
+}
+/*# sourceMappingURL=styles.css.map */
